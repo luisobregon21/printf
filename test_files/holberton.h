@@ -7,5 +7,6 @@
 
 int _putchar(char c);
 int _printf(const char *format, ...);
+int mod_check(char modifier, va_list list);
 
 #endif /* _HOLBERTON_H_ */
