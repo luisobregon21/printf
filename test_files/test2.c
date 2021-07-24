@@ -42,14 +42,12 @@ int _printf(const char *format, ...)
 			 * that checks for the letter that follows
 			 * the modifier (%)
 			 * */
-			mod_check(format[idx +1], list);
-			track++;
+			track += mod_check(format[idx +1], list);
 			idx++;
 		}
 		else
 		{
-			putchar(format[idx]);
-			track++;
+			track += putchar(format[idx]);
 		}
 	}
 	va_end(list);
