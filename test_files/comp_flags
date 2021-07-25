@@ -1,4 +1,4 @@
 #!/bin/bash
 rm a.out holberton.h.gch
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 0-main.c 0-printf.c _str_print.c mod_check.c
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 0-main.c 0-printf.c str_print.c mod_check.c
 ./a.out
