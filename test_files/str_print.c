@@ -3,7 +3,6 @@
 /**
  * prtstr - function that prints a string
  * @s: string to print
- * @list: arguments from printf
  * Return: the amount of characters
  */
 
@@ -21,7 +20,6 @@ int prtstr(char *s)
 /**
  * prtchar - function that prints a character
  * @c: character to print
- * @list: arguments from printf
  * Return: character
  */
 
