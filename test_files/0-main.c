@@ -3,34 +3,66 @@
 #include "holberton.h"
 
 /**
- * main - Entry point
+ * main - testing out printf to verify edge cases
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int len;
-	int len2;
-	unsigned int ui;
-	char *p = NULL;
+	int l1 = 0, l2 = 0;
+	char *ptr = NULL;
 
-	len = _printf("Let's try to printf a simple sentence.\n");
-	len2 = printf("Let's try to printf a simple sentence.\n");
-	_printf("Character:[%c]\n", 'H');
-	printf("Character:[%c]\n", 'H');
-	_printf("String:[%s]\n", "I am a string !");
-	printf("String:[%s]\n", "I am a string !");
-	//EDGE CASES GOES HERE
+	l1 = printf("This is a test\n");
+	l2 = _printf("This is a test\n");
+	printf("1 printf: %d _printf: %d \n", l1, l2);
+	putchar("\n");
 
-	_printf("%%\n");
-	printf("%%\n");
+	l1 = printf("%s", ptr);
+	putchar('\n');
+	l2 = _printf("%s", ptr);
+	putchar('\n');
+	printf("2 printf: %d _printf: %d \n", l1, l2);
+	putchar("\n");
 
-	printf("%s\n", p);
+	l1 = printf("This is a test\n");
+	l2 = _printf("This is a test\n");
+	printf("3 printf: %d _printf: %d \n", l1, l2);
+	putchar("\n");
 
+	l1 = printf("This is a test\n");
+	l2 = _printf("This is a test\n");
+	printf("4 printf: %d _printf: %d \n", l1, l2);
+	putchar("\n");
 
+	l1 = printf("This is a test\n");
+	l2 = _printf("This is a test\n");
+	printf("5 printf: %d _printf: %d \n", l1, l2);
+	putchar("\n");
 
-	//EDGE CASES ENDS
-	
+	l1 = printf("This is a test\n");
+	l2 = _printf("This is a test\n");
+	printf("6 printf: %d _printf: %d \n", l1, l2);
+	putchar("\n");
+
+	l1 = printf("This is a test\n");
+	l2 = _printf("This is a test\n");
+	printf("7 printf: %d _printf: %d \n", l1, l2);
+	putchar("\n");
+
+	l1 = printf("This is a test\n");
+	l2 = _printf("This is a test\n");
+	printf("8 printf: %d _printf: %d \n", l1, l2);
+	putchar("\n");
+
+	l1 = printf("This is a test\n");
+	l2 = _printf("This is a test\n");
+	printf("9 printf: %d _printf: %d \n", l1, l2);
+	putchar("\n");
+
+	l1 = printf("This is a test\n");
+	l2 = _printf("This is a test\n");
+	printf("10 printf: %d _printf: %d \n", l1, l2);
+	putchar("\n");
 
 	return (0);
 }
