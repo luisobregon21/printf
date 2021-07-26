@@ -25,5 +25,7 @@ int converter(char modifier, va_list list)
 			return (count);
 		}
 	}
+	count += _putchar('%');
+	count += _putchar(modifier);
 	return (count);
 }
