@@ -12,6 +12,8 @@ int converter(char modifier, va_list list)
 	convert fp[] = {
 		{'c', print_char},
 		{'s', print_str},
+		{'i', print_num},
+		{'d', print_num},
 		{'\0', NULL}
 	};
 
