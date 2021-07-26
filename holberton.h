@@ -10,6 +10,7 @@ int _printf(const char *format, ...);
 int converter(char modifier, va_list list);
 int print_char(va_list);
 int print_str(va_list list);
+int print_num(va_list list);
 /**
  * struct converter - struct especifies conversion.
  * @mod: the specifier variable.
