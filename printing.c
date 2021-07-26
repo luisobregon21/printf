@@ -32,3 +32,41 @@ int print_str(va_list list)
 	}
 	return (idx - 1);
 }
+/**
+ * print_num - prints interger/decimal passed.
+ * @list: list of arguements passed.
+ * Return: number of characters written.
+ */
+int print_num(va_list list)
+{
+	int num = 0, idx = 0;
+	int count = 0;
+	int arr[12];
+
+	num = va_arg(list, int);
+
+	if (num == 0)
+	{
+		count += _putchar(num + '0');
+		return (count);
+	}
+
+	if (num < 0)
+	{
+		count += _putchar('-');
+		num = (num * (-1));
+	}
+
+	while (num != 0)
+	{
+		arr[idx] = num % 10;
+		num = num / 10;
+		idx++;
+	}
+
+	for (; (idx - 1) >= 0; idx--)
+	{
+		count += _putchar(arr[idx] + '0');
+	}
+	return (count);
+}
