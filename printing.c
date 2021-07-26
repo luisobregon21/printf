@@ -24,7 +24,7 @@ int print_str(va_list list)
 
 	str = va_arg(list, char *);
 
-	if(str == NULL)
+	if (str == NULL)
 		str = "(null)";
 	for (idx = 0; str[idx] != '\0'; idx++)
 	{
