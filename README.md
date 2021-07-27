@@ -3,7 +3,11 @@
  ** version 1.0.0 **
 
 ##Function prototype: int **_printf**(const char *format, ...);
-###Purpose of the project: 
+
+
+###Purpose of the project:
+
+
 The purpose of this project is to challenge the capacity and problem solving skills a Holberton School student should have at this stage, and to show them how to work in a work setting environment with a partner  to not just get used to working alone.
 
 ### Description:
