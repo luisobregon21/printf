@@ -17,7 +17,7 @@ Printing - will give the right function to use in the converter.
 Converter then passes the conversion to **_printf**
 Then **_printf** will pass what it received to main.c.
 The execution of all compiled files should at least print out a string, character and integer.
-
+---
 ### Return value:
 If **_printf** succeeds, it will return the number of characters that were printed, this does not include the ‘\0’ (null byte). If the function fails, it will return -1.
 
@@ -42,7 +42,7 @@ The specifier, introduced by the character %, is the character that follows the 
 * **%**
 
 	If there is a % after the modifier, nothing is going to be converted but instead, only one of the % will be printed.
-
+---
 ### Example
 Test out to print the age, name and Initial of the name in the format. What is passed “My name is Rafael, I am 26 years old, my name starts with the letter R”. Name is the string, age is the integer and H is the character we are going to print down below:
 
@@ -55,8 +55,8 @@ Test out to print the age, name and Initial of the name in the format. What is p
 
 ## contributors
 
-**Luis Obregon and Rafael Narvaez.**
-**@cohort 15, Holberton School Puerto Rico.**
+Luis Obregon and Rafael Narvaez.
+@cohort 15, Holberton School Puerto Rico.
 ---
 
 ## License & copyright
