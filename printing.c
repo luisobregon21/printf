@@ -73,3 +73,28 @@ int print_num(va_list list)
 	}
 	return (count);
 }
+/**
+ * print_binary - function converts unsigned int to binary.
+ * @list: unsigned int arguement to convert to binary.
+ * Return: number of characters used.
+ */
+int print_binary(va_list list)
+{
+	unsigned int a[10];
+	unsigned int b;
+	int idx = 0;
+	int count = 0;
+
+	b = va_arg(list, unsigned int);
+
+	for (idx = 0; b > 0; idx++)
+	{
+		a[idx] = b % 2;
+		b = b / 2;
+	}
+	for (idx = idx - 1; idx >= 0; idx--)
+	{
+		count += _putchar(a[idx] + '0');
+	}
+	return (count);
+}

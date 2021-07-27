@@ -14,6 +14,7 @@ int converter(char modifier, va_list list)
 		{'s', print_str},
 		{'i', print_num},
 		{'d', print_num},
+		{'b', print_binary},
 		{'\0', NULL}
 	};
 
