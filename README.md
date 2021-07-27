@@ -43,13 +43,14 @@ Test out to print the age, name and Initial of the name in the format. What is p
 
 #include “holberton.h”
 
-`Int main(void)
+`int main(void)
 {
-	Char *name = “Rafael”;
-	Int age = 26;
-	Char  letter = ‘R’;
+	char *name = “Rafael”;
+	int age = 26;
+	char letter = ‘R’;
 	
 	_printf(“My name is %s, I am %d years old, my name starts with the letter %c.”, name, age, letter);
+	return (0);
 }`
 
 ##Output in terminal:
