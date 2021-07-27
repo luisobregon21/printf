@@ -1,7 +1,8 @@
 # **_printf**
 
  ** version 1.0.0 **
-Function prototype: int **_printf**(const char *format, ...);
+
+##Function prototype: int **_printf**(const char *format, ...);
 ###Purpose of the project: 
 The purpose of this project is to challenge the capacity and problem solving skills a Holberton School student should have at this stage, and to show them how to work in a work setting environment with a partner  to not just get used to working alone.
 
@@ -26,16 +27,16 @@ If **_printf** succeeds, it will return the number of characters that were print
 ### Conversion specifiers:
 The specifier, introduced by the character %, is the character that follows the modifier. Down below you will see the conversion specifiers that our **_printf** function accepts and their description.
 
-*s
+* s
 The const char * is a string. Each index of the string will be printed out starting from the first character to the last element. *note: this will not include the terminating (\0).
 
-*c
+* c
 The int argument is converted to a char.
 
-*i, d
+* i, d
 The int arguments are printed.
 
-*%
+* %
 If there is a % after the modifier, nothing is going to be converted but instead, only one of the % will be printed.
 
 ### Example
