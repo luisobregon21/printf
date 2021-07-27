@@ -55,8 +55,9 @@ Test out to print the age, name and Initial of the name in the format. What is p
 
 ## contributors
 
-Luis Obregon and Rafael Narvaez.
-@cohort 15, Holberton School Puerto Rico.
+##### Luis Obregon and Rafael Narvaez.
+##### @cohort 15, Holberton School Puerto Rico.
+
 ---
 
 ## License & copyright
