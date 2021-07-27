@@ -19,7 +19,7 @@ int print_str(va_list list);
 int print_num(va_list list);
 
 typedef struct converter
-
+.RS 2
 {
 
 char mod;
@@ -31,7 +31,7 @@ int (*f)(va_list list);
 }
 
 convert;
-
+.RE
 .SH DESCRIPTION
 
 The functions in the _printf() produce output according to a format as described below. The function _printf() write output
@@ -46,11 +46,12 @@ The format string is a character string, beginning and ending in its initial shi
 more directives: ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications, each of which results
 in fetching zero or more subsequent arguments.  Each conversion specification is introduced by the character %, and ends with a conversion specifier. In
 between there may be (in this order) zero or more flags, an optional minimum field width, an optional precision and an optional length modifier
+.RE
 
 The overall syntax of a conversion specification is:
-
+.RS3
 int converter(char modifier, va_list list)
-
+.RE
 Conversion specifiers
 
 A character that specifies the type of conversion to be applied. The conversion specifiers and their meanings are:
@@ -103,15 +104,21 @@ Converter then passes the conversion to _printf. Then _printf will pass what it 
 The execution of all compiled files should at least print out a string, character and integer.
 
 Some programs imprudently rely on code such as the following:
-
+.RS 2
 typedef struct converter
-{
-char mod;
-/*va_list contains un list de variables*/
-int (*f)(va_list list);
-}
-convert;
 
+{
+
+char mod;
+
+/*va_list contains un list de variables*/
+
+int (*f)(va_list list);
+
+}
+
+convert;
+.RE
 The struct converter function especifies the conversion by using the char variable (char mod) and the function pointer (f) which accepts a list of variables and return an integer.
 
 .SH SEE ALSO
