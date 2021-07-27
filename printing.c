@@ -64,7 +64,7 @@ int print_num(va_list list)
 		idx++;
 	}
 
-	for (; (idx - 1) >= 0; idx--)
+	for (idx = idx - 1; idx >= 0; idx--)
 	{
 		count += _putchar(arr[idx] + '0');
 	}
