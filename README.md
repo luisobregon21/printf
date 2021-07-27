@@ -44,7 +44,7 @@ Test out to print the age, name and Initial of the name in the format. What is p
 	_printf(“My name is %s, I am %d years old, my name starts with the letter %c.”, "Rafael", 26, 'R');
 
 ##Output in terminal:
-~$ My name is Rafael, I am 26 years old, my name starts with the letter R}
+~$ `My name is Rafael, I am 26 years old, my name starts with the letter R}`
 
 ---
 
