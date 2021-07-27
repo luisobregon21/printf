@@ -86,7 +86,17 @@ If an output error is encountered, a negative value is returned.
 The _printf is a recreation of the printf function provided by the standard input/output (<stdio.h>) library. The _printf (function) writes the output under a format string that is specified later on in the function. 
 The _printf is composed of 6 files in total, including the main.
 
+Main - calls printf.
 
+Printf - checks when the letter being passed is a modifier and the char after it is   not (null) to call the function converter.
+
+Converter - converts the specifier to the respective function being called.
+
+Printing - holds the functions that are going to be called in the converter and will give the right function to use in the converter.
+
+Converter then passes the conversion to _printf. Then _printf will pass what it received to main.c.
+
+The execution of all compiled files should at least print out a string, character and integer.
 
 Some programs imprudently rely on code such as the following:
 
