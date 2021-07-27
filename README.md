@@ -9,6 +9,7 @@ The purpose of this project is to challenge the capacity and problem solving ski
 ### Description:
 The **_printf** function is a small recreation of the printf function provided by the standard input/output library (<stdio.h>). **_printf** writes the output under a format string that is specified later on in the function. **_printf** is composed of 6 files in total, including the main.
 
+
 Main - calls printf.
 Printf - checks when the letter being passed is a modifier and the char after it is   not (null) to call the function converter.
 Converter - converts the specifier to the respective function being called.
@@ -17,7 +18,8 @@ Printing - will give the right function to use in the converter.
 Converter then passes the conversion to **_printf**
 Then **_printf** will pass what it received to main.c.
 The execution of all compiled files should at least print out a string, character and integer.
----
+
+
 ### Return value:
 If **_printf** succeeds, it will return the number of characters that were printed, this does not include the ‘\0’ (null byte). If the function fails, it will return -1.
 
