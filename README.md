@@ -11,12 +11,26 @@ The **_printf** function is a small recreation of the printf function provided b
 
 
 Main - calls printf.
+
+
 Printf - checks when the letter being passed is a modifier and the char after it is   not (null) to call the function converter.
+
+
 Converter - converts the specifier to the respective function being called.
+
+
 Printing - holds the functions that are going to be called in the converter.
+
+
 Printing - will give the right function to use in the converter.
+
+
 Converter then passes the conversion to **_printf**
+
+
 Then **_printf** will pass what it received to main.c.
+
+
 The execution of all compiled files should at least print out a string, character and integer.
 
 
