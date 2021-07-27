@@ -19,8 +19,10 @@ int mod_check(char modifier, va_list list)
 			str = va_arg(list, char *);
 			/* prints out every element of the string*/
 		for (index = 0; str[index] != '\0'; index++)
+		{
 			putchar(str[index]);
-		return (index);
+			return (index);
+		}
 
 		case 'c':
 			letter = va_arg(list, int);

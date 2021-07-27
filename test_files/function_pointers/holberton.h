@@ -8,7 +8,7 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 int converter(char modifier, va_list list);
-int print_char(va_list list);
+int print_char(va_list);
 int print_str(va_list list);
 typedef struct converter
 {

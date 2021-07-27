@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc 2-printf.c _putchar.c grouptest.c converter.c holberton.h printing.c
+./a.out
