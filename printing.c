@@ -30,7 +30,7 @@ int print_str(va_list list)
 	{
 		_putchar(str[idx]);
 	}
-	return (idx - 1);
+	return (idx);
 }
 /**
  * print_num - prints interger/decimal passed.
@@ -41,7 +41,7 @@ int print_num(va_list list)
 {
 	int num = 0, idx = 0;
 	int count = 0;
-	int arr[12];
+	int arr[13];
 
 	num = va_arg(list, int);
 
@@ -54,7 +54,7 @@ int print_num(va_list list)
 	if (num < 0)
 	{
 		count += _putchar('-');
-		num = (num * (-1));
+		num = num * (-1);
 	}
 
 	while (num != 0)
