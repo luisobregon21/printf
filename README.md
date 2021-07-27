@@ -41,17 +41,7 @@ If there is a % after the modifier, nothing is going to be converted but instead
 ## Example
 Test out to print the age, name and Initial of the name in the format. What is passed “My name is Rafael, I am 26 years old, my name starts with the letter R”. Name is the string, age is the integer and H is the character we are going to print down below:
 
-#include “holberton.h”
-
-`int main(void)
-{
-	char *name = “Rafael”;
-	int age = 26;
-	char letter = ‘R’;
-	
-	_printf(“My name is %s, I am %d years old, my name starts with the letter %c.”, name, age, letter);
-	return (0);
-}`
+	_printf(“My name is %s, I am %d years old, my name starts with the letter %c.”, "Rafael", 26, 'R');
 
 ##Output in terminal:
 ~$ My name is Rafael, I am 26 years old, my name starts with the letter R}
