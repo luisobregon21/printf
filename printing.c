@@ -42,25 +42,28 @@ int print_num(va_list list)
 	int num = 0, idx = 0;
 	int count = 0;
 	int arr[13];
+	unsigned int new;
 
 	num = va_arg(list, int);
-
-	if (num == 0)
-	{
-		count += _putchar(num + '0');
-		return (count);
-	}
 
 	if (num < 0)
 	{
 		count += _putchar('-');
-		num = num * (-1);
+		new = num * (-1);
+	}
+	else
+		new = num;
+
+	if (new == 0)
+	{
+		count += _putchar(new + '0');
+		return (count);
 	}
 
-	while (num != 0)
+	while (new != 0)
 	{
-		arr[idx] = num % 10;
-		num = num / 10;
+		arr[idx] = new % 10;
+		new = new / 10;
 		idx++;
 	}
 
