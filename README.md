@@ -27,19 +27,19 @@ If **_printf** succeeds, it will return the number of characters that were print
 ### Conversion specifiers:
 The specifier, introduced by the character %, is the character that follows the modifier. Down below you will see the conversion specifiers that our **_printf** function accepts and their description.
 
-* **s
+* **s**
 
 	The const char * is a string. Each index of the string will be printed out starting from the first character to the last element. *note: this will not include the terminating (\0).
 
-* c
+* **c**
 
 	The int argument is converted to a char.
 
-* i, d
+* **i, d**
 
 	The int arguments are printed.
 
-* %
+* **%**
 
 	If there is a % after the modifier, nothing is going to be converted but instead, only one of the % will be printed.
 
@@ -55,13 +55,12 @@ Test out to print the age, name and Initial of the name in the format. What is p
 
 ## contributors
 
-Luis Obregon and Rafael Narvaez.
-@cohort 15, Holberton School Puerto Rico.
-
+**Luis Obregon and Rafael Narvaez.
+@cohort 15, Holberton School Puerto Rico.**
 ---
 
 ## License & copyright
 **_printf** function was a 5 day project delegated to Holberton Students around the world.
 This **_printf** being read was created by cohort 15 students.
 
-© [2021] [Luis Obregon & Rafael Narvaez, Holberton School Puerto Rico]
+**© [2021] [Luis Obregon & Rafael Narvaez, Holberton School Puerto Rico]**
