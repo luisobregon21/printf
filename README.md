@@ -28,15 +28,19 @@ If **_printf** succeeds, it will return the number of characters that were print
 The specifier, introduced by the character %, is the character that follows the modifier. Down below you will see the conversion specifiers that our **_printf** function accepts and their description.
 
 * s
+
 	The const char * is a string. Each index of the string will be printed out starting from the first character to the last element. *note: this will not include the terminating (\0).
 
 * c
+
 	The int argument is converted to a char.
 
 * i, d
+
 	The int arguments are printed.
 
 * %
+
 	If there is a % after the modifier, nothing is going to be converted but instead, only one of the % will be printed.
 
 ### Example
