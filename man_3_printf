@@ -83,6 +83,11 @@ If an output error is encountered, a negative value is returned.
 
 .SH NOTES
 
+The _printf is a recreation of the printf function provided by the standard input/output (<stdio.h>) library. The _printf (function) writes the output under a format string that is specified later on in the function. 
+The _printf is composed of 6 files in total, including the main.
+
+
+
 Some programs imprudently rely on code such as the following:
 
 typedef struct converter
@@ -97,7 +102,7 @@ The struct converter function especifies the conversion by using the char variab
 
 .SH SEE ALSO
 
-_printf(1), _putchar(), 
+_printf(1), _putchar(),
 
 .SH COLOPHON
 
