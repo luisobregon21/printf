@@ -71,7 +71,9 @@ If no l modifier is present: the const char * argument is expected to be a point
 written up to (but not including) a terminating null byte ('\0'); if a precision is specified, no more than the number specified are written.  If a precision is given, no
 null byte need be present; if the precision is not specified, or is greater than the size of the array, the array must contain a terminating null byte.
 
-%      A '%' is written.  No argument is converted.  The complete conversion specification is '%%'.
+%
+.RS 3
+A '%' is written.  No argument is converted.  The complete conversion specification is '%%'.
 
 .SH RETURN VALUE
 
