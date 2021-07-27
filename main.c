@@ -10,13 +10,17 @@ int main(void)
 	int len2;
 	unsigned int ui;
 	void *addr;
+	char *s = NULL;
 	/**
 	 * "double quotes is for string"
 	 * 'single quotes is for characters'
-	 **/
+	 */
+	_printf("%s%c%c%c%s%%%s%c", "Loading ", '.', '.', '.', " 10", " hey  plz", '\n');
+	_printf("%s", s);
+	printf("\n");
+
 	_printf("this is a string:%s\nand a character: %c\n", "s", 98);
 	_printf("Hi my name is %s, call me %c, as in Hero\n", "Manny Vela", 'H');
-
 	/* testing edge cases*/
 
 	len = _printf("Let's try to printf a simple sentence.\n");
@@ -44,5 +48,9 @@ int main(void)
 	_printf("Len:[%d]\n", len);
 	printf("Len:[%d]\n", len2);
 	_printf("Unknown:[%r]\n");
+
+	printf(NULL);
+	_printf(NULL);
+
 	return (0);
 }
