@@ -57,6 +57,5 @@ Luis Obregon and Rafael Narvaez
 ## License & copyright
 **_printf** function was a 5 day project delegated to Holberton Students around the world.
 This **_printf** being read was created by cohort 15 students.
-copyright [2021] [Luis Obregon & Rafael Narvaez, Holberton School Puerto Rico]
 
-
+© [2021] [Luis Obregon & Rafael Narvaez, Holberton School Puerto Rico]
