@@ -1,0 +1,4 @@
+#!/bin/bash
+betty *.c *.h
+gcc -Wall -Werror -Wno-format -Wextra -pedantic -std=gnu89 *.c
+./a.out
