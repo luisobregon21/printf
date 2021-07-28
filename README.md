@@ -44,7 +44,7 @@ Then **_printf** will pass what it received to main.c.
 
 The execution of all compiled files should at least print out a string, character and integer.
 
-
+---
 ### Other files:
 To make life easier, this project contains 2 command files when you want to compile and run the code.
 
@@ -56,12 +56,15 @@ To make life easier, this project contains 2 command files when you want to comp
 
 **man_3_printf** - the man page of _printf. It has all the information about the function of _printf.
 
+---
 ### Return value:
 If **_printf** succeeds, it will return the number of characters that were printed, this does not include the ‘\0’ (null byte). If the function fails, it will return -1.
 
+---
 ### String Format passed as a parameter:
 **_printf** accepts a constant character string, which is format. The string is based on regular characters, which can’t be changed. But it also has conversion specifiers, like ‘s’ and ‘c’, which are introduced by a modifier : ‘%’. The conversion ends with a conversion specifier.
 
+---
 ### Conversion specifiers:
 The specifier, introduced by the character %, is the character that follows the modifier. Down below you will see the conversion specifiers that our **_printf** function accepts and their description.
 
