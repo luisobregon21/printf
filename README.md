@@ -11,22 +11,24 @@
 The purpose of this project is to challenge the capacity and problem solving skills that a Holberton School student should have at this stage, and to show them how to work in a work setting environment with a partner to not just get used to working alone.
 
 ### Description:
-The **_printf** function is a small recreation of the printf function provided by the standard input/output library (<stdio.h>). **_printf** writes the output under a format string that is specified later on in the function. **_printf** is composed of 6 files in total, including the main.
+The **_printf** function is a small recreation of the printf function provided by the standard input/output library (<stdiio.h>). **_printf** writes the output under a format string that is specified later on in the function. **_printf** is composed of 6 files in total, including the main.
+
+<!-- The following are small descriptions of how our printf function works -->
 
 
-Main - calls printf.
+Main.c - calls printf.
 
 
-Printf - checks when the letter being passed is a modifier and the char after it is not (null) to call the function converter.
+**_printf.c** - checks when the letter being passed is a modifier and the char after it is not (null) to call the function converter.
 
 
-Converter - converts the specifier to the respective function being called.
+**Converter.c** - converts the specifier to the respective function being called.
 
 
-Printing - holds the functions that are going to be called in the converter.
+**Printing.c** - holds the functions that are going to be called in the converter.
 
 
-Printing - will give the right function to use in the converter.
+Printing.c - will give the right function to use in the converter.
 
 
 Converter then passes the conversion to **_printf**.
