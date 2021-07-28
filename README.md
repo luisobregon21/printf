@@ -45,7 +45,7 @@ Then **_printf** will pass what it received to main.c.
 The execution of all compiled files should at least print out a string, character and integer.
 
 
-### other files
+### Other files:
 To make life easier, this project contains 2 command files when you want to compile and run the code.
 
 **betty check** - holds the commands to do a **betty check**, compile with all the **flags** provided by holbertonschool and executes the compiled file.
