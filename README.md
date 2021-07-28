@@ -11,21 +11,26 @@
 The purpose of this project is to challenge the capacity and problem solving skills that a Holberton School student should have at this stage, and to show them how to work in a work setting environment with a partner to not just get used to working alone.
 
 ### Description:
-The **_printf** function is a small recreation of the printf function provided by the standard input/output library (<stdiio.h>). **_printf** writes the output under a format string that is specified later on in the function. **_printf** is composed of 6 files in total, including the main.
+The **_printf** function is a small recreation of the printf function provided by the standard input/output library (<stdiio.h>).
 
-<!-- The following are small descriptions of how our printf function works -->
+**_printf** writes the output under a format string that is specified later on in the function. **_printf** is composed of 6 files in total, including the main.
 
+---
+note: The following are small descriptions of how our printf function works.
+---
 
-Main.c - calls printf.
+**holberton.h** - holds all the prototypes to the functions being called. Every file has a #include "holberton.h" inside of the.
+
+**main.c** - calls printf.
 
 
 **_printf.c** - checks when the letter being passed is a modifier and the char after it is not (null) to call the function converter.
 
 
-**Converter.c** - converts the specifier to the respective function being called.
+**converter.c** - converts the specifier to the respective function being called.
 
 
-**Printing.c** - holds the functions that are going to be called in the converter.
+**printing.c** - holds the functions that are going to be called in the converter.
 
 
 Printing.c - will give the right function to use in the converter.
@@ -40,10 +45,21 @@ Then **_printf** will pass what it received to main.c.
 The execution of all compiled files should at least print out a string, character and integer.
 
 
+#### other files
+To make life easier, this project contains 2 command files when you want to compile and run the code.
+
+**betty check** - holds the commands to do a **betty check**, compile with all the **flags** provided by holbertonschool and executes the compiled file.
+
+**compile_check** - holds the commands that compiles with one fliag, that doesn't complain about the format, and runs the compiled file.
+
+**_putchar** - prints a character and returns number of characters printed.
+
+**man_3_printf** - the man page of _printf. It has all the information about the function of _printf.
+
 ### Return value:
 If **_printf** succeeds, it will return the number of characters that were printed, this does not include the ‘\0’ (null byte). If the function fails, it will return -1.
 
-### String Format passed as a parameter: 
+### String Format passed as a parameter:
 **_printf** accepts a constant character string, which is format. The string is based on regular characters, which can’t be changed. But it also has conversion specifiers, like ‘s’ and ‘c’, which are introduced by a modifier : ‘%’. The conversion ends with a conversion specifier.
 
 ### Conversion specifiers:
